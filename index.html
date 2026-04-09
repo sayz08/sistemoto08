@@ -6,27 +6,74 @@
     <title>Sistem Oto Arhavi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; margin: 0; padding: 20px; }
-        .container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
-        h1 { color: #333; }
-        .btn { display: block; width: 100%; padding: 15px; margin: 10px 0; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 18px; color: white; border: none; cursor: pointer; }
-        .whatsapp { background-color: #25D366; }
-        .phone { background-color: #007bff; }
-        i { margin-right: 10px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #000; color: #fff; margin: 0; padding: 0; }
+        .header { background-color: #cc0000; padding: 12px; text-align: center; border-bottom: 2px solid #900; font-weight: bold; font-size: 13px; }
+        .container { max-width: 450px; margin: auto; padding: 15px; text-align: center; }
+        .hero { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border: 1px solid #333; }
+        .hero h2 { color: #fff; margin: 0; font-size: 18px; letter-spacing: 1px; }
+        .main-title { font-size: 22px; font-weight: 900; margin: 25px 0; line-height: 1.2; text-transform: uppercase; }
+        .btn-konum { background-color: #28a745; color: white; text-decoration: none; padding: 15px; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 15px; margin-bottom: 30px; border-bottom: 4px solid #1e7e34; position: relative; }
+        .btn-konum i { font-size: 20px; margin-right: 10px; }
+        .parmak-icon { position: absolute; right: 10px; bottom: -15px; font-size: 24px; color: #fff; transform: rotate(-10deg); }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .card { background: white; color: black; border-radius: 15px; padding: 15px; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .card i { font-size: 18px; color: #cc0000; margin-bottom: 5px; }
+        .card b { font-size: 11px; text-transform: uppercase; margin-bottom: 2px; }
+        .card .hat-no { background: #ffcc00; color: #000; font-size: 10px; font-weight: 900; padding: 2px 8px; border-radius: 4px; margin-bottom: 5px; }
+        .card span { font-size: 10px; color: #111; font-weight: 800; margin-bottom: 10px; }
+        .card .btn-label { background: #222; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 10px; font-weight: bold; text-transform: uppercase; }
+        .warning-text { color: #ffcc00; font-size: 14px; font-weight: bold; display: block; margin: 30px 0 15px 0; }
+        .icons-row { display: flex; justify-content: center; gap: 20px; color: #cc0000; font-size: 22px; margin-bottom: 20px; opacity: 0.8; }
+        .btn-footer { background-color: #cc0000; color: white; text-decoration: none; padding: 16px; border-radius: 50px; display: block; font-weight: bold; font-size: 16px; margin-bottom: 30px; border-bottom: 4px solid #900; }
     </style>
 </head>
 <body>
+    <div class="header">🚨 ARHAVİ 7/24 ACİL ÇEKİCİ</div>
     <div class="container">
-        <h1>Sistem Oto Arhavi</h1>
-        <p>Arhavi Sanayi Sitesi - Kaliteli Hizmet</p>
-        
-        <a href="https://wa.me/905436630800?text=Merhaba%20usta,%20oto%20y%C4%B1kama%20i%C3%A7in%20randevu%20almak%20istiyorum." class="btn whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+        <div class="hero">
+            <h2>SİSTEM OTO ARHAVİ</h2>
+            <p>Kale Mah. Sanayi Sitesi | Profesyonel Çözüm Merkezi</p>
+        </div>
+        <div class="main-title">YOLDA MI KALDINIZ?<br>PANİK YAPMAYIN.</div>
+        <a href="https://wa.me/905387369845?text=Konumunda%20acil%20servis%20bekliyorum" class="btn-konum">
+            <i class="fab fa-whatsapp"></i> Konumunu WhatsApp'tan Gönder
+            <span class="parmak-icon">👆</span>
         </a>
-        
-        <a href="tel:+905436630800" class="btn phone">
-            <i class="fas fa-phone"></i> Hemen Ara
-        </a>
+        <div class="grid">
+            <a href="tel:+905387369845" class="card">
+                <div class="hat-no">1. HAT</div>
+                <i class="fas fa-truck-pickup"></i>
+                <b>Mekanik & Çekici</b>
+                <span>0538 736 98 45</span>
+                <div class="btn-label">Hemen Ara</div>
+            </a>
+            <a href="tel:+905324303191" class="card">
+                <div class="hat-no">2. HAT</div>
+                <i class="fas fa-bolt"></i>
+                <b>Oto Elektrikçi</b>
+                <span>0532 430 31 91</span>
+                <div class="btn-label">Tıkla Ara</div>
+            </a>
+            <a href="tel:+905316284708" class="card">
+                <div class="hat-no">3. HAT</div>
+                <i class="fas fa-faucet-drip"></i>
+                <b>Yıkamacı</b>
+                <span>0531 628 47 08</span>
+                <div class="btn-label">Yıkama Hattı</div>
+            </a>
+            <a href="https://wa.me/905387369845?text=Yedek%20parça%20sormak%20istiyorum" class="card">
+                <div class="hat-no">1. HAT</div>
+                <i class="fas fa-box"></i>
+                <b>Yedek Parça</b>
+                <span>Parça Sor</span>
+                <div class="btn-label">Yaz</div>
+            </a>
+        </div>
+        <span class="warning-text">⚠️ PANELDE LAMBA MI YANIYOR?</span>
+        <div class="icons-row">
+            <i class="fas fa-oil-can"></i><i class="fas fa-battery-full"></i><i class="fas fa-engine"></i><i class="fas fa-circle-notch"></i>
+        </div>
+        <a href="tel:+905387369845" class="btn-footer">DÜKKANI ARA: 0538 736 98 45</a>
     </div>
 </body>
 </html>
